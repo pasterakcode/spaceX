@@ -1,0 +1,13 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	margin: 0;
+}
+h6 {
+	color: rgb(87, 85, 85);
+	text-transform: uppercase;
+	margin-bottom: 15px;
+    align-self: flex-start;
+}

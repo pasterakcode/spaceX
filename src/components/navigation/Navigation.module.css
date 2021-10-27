@@ -1,0 +1,27 @@
+.sectionNavigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(87, 85, 85);
+}
+
+.logo {
+    background-image: url('../../img/SpaceX-LogoSm.svg_.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 200px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.btnNoActive {
+    color: rgb(87, 85, 85)
+}
