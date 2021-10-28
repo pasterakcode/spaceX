@@ -44,7 +44,9 @@ Next you must open termial in folder where you download my project
 3. Install NPM / use command: npm install -g npm
 4. Install React / npm install --save react react-dom
 5. Install Axios / npm i axios
-6. Use command: npm start
+6. Install Bootstrap / npm i bootstrap
+7. Install Bootstrap Icons / npm i bootstrap-icons
+8. Use command: npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
