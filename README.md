@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/78322363/139315758-79afcfd0-eb82-4b71-80ce-3e0118476cc2.png)
 
-SpaceX
+****
 
 
 The application allows you to view the latest starts of the Space X company.
@@ -8,7 +8,7 @@ The application allows you to view the latest starts of the Space X company.
 
 
 
-
+****
 
 Important informations: 
 
