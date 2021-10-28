@@ -24,12 +24,12 @@ Important informations:
 
 3. When you hover your mouse over shortcut of Launch site, the full name will be displayed
 
-![image](https://user-images.githubusercontent.com/78322363/139319098-468df329-ab97-434f-8061-07766300b770.png)
+![image](https://user-images.githubusercontent.com/78322363/139320331-d9a12418-7e81-478a-9502-9e3a472000df.png)
 
 
 4. Some missions did not involve any rescue ships. the message "no ships" is the information about it
 
-![image](https://user-images.githubusercontent.com/78322363/139320331-d9a12418-7e81-478a-9502-9e3a472000df.png)
+![image](https://user-images.githubusercontent.com/78322363/139320586-9628ada3-1abd-431d-b31e-b9eda8169f37.png)
 
 
 5. The application has mobile and desktop version: check both.
