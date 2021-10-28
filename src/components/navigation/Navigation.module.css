@@ -1,27 +1,27 @@
 .sectionNavigation{
-    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 85px;
     border-bottom: 1px solid #5C5C5D;
 }
 
 .logo {
+    height: 80px;
+    width: 200px;
     background-image: url('../../img/SpaceX-LogoSm.svg_.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 80px;
-    width: 200px;
 }
 
 .btn {
-    border: none;
+    margin: 0 10px;
     background-color: transparent;
-    color: #F4F6FA;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0 10px;
+    color: #F4F6FA;
+    border: none;
 }
 .btnNoActive {
     color: #5C5C5D;

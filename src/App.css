@@ -1,13 +1,6 @@
-.mainSection {
-	background: rgb(12, 12, 15);
-	background: linear-gradient(
-		90deg,
-		rgba(12, 12, 15, 1) 47%,
-		rgba(38, 38, 41, 0.9889196675900277) 100%
-	);
-}
 
 .App {
 	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
 }
 

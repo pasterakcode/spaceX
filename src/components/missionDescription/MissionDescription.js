@@ -4,19 +4,22 @@ import styles from './MissionDescriptions.module.css'
 
 function MissionDescription(props) {
 	const [missionDescription, setMissionDescription] = useState();
+	const [paragraphIsShow, setParagraphIsShow] = useState(false)
 
 	useEffect(() => {
 		if (props.missionDetails) {
-			setMissionObj();
+			getMissionObj();
+		} else {
+			setMissionDescription(null)
 		}
 	}, [props.missionDetails]);
 
-	const setMissionObj = () => {
+	const getMissionObj = () => {
 		const missionDesc = {
 			missionName: props.missionDetails.mission_name,
 			missionRocket: props.missionDetails.rocket.rocket_name,
 			missionRocketIsRecovered: checkRocketStatus(),
-			missionLunchDateShort: setMissionStartDate(props.missionDetails),
+			missionLunchDateShort: getMissionStartDate(props.missionDetails),
 			missionLunchDateLong: (props.missionDetails.launch_date_local).replace("T", " "),
 			missionLunchSiteShort: props.missionDetails.launch_site.site_name,
 			missionLunchSiteLong: props.missionDetails.launch_site.site_name_long,
@@ -38,13 +41,44 @@ function MissionDescription(props) {
 		return wasRecovered;
 	};
 
-	const setMissionStartDate = mission => {
+	const getMissionStartDate = mission => {
 		const year = mission.launch_date_local.substr(0, 4);
-		const month = mission.launch_date_local.substr(5, 2);
+		let month = mission.launch_date_local.substr(5, 2);
+		month = getNameOfMonth(1* month);
 		const day = mission.launch_date_local.substr(8, 2);
-		const startDate = [day, month, year].join('-');
+		const startDate = [day, month, year].join(' ');
 		return startDate;
 	};
+	const getNameOfMonth = (numberOfMonth) => {
+		switch (numberOfMonth) {
+			case 1:
+				return "Jan"
+			case 2:
+				return "Feb"
+			case 3:
+				return "Mar"
+			case 4:
+				return "Apr"
+			case 5:
+				return "May"
+			case 6:
+				return "Jun"
+			case 7:
+				return "Jul"
+			case 8:
+				return "Aug"
+			case 9:
+				return "Sep"
+			case 10:
+				return "Oct"
+			case 11:
+				return "Nov"
+			case 12:
+				return "Dec"
+			default:
+				return numberOfMonth;
+		}
+	}
 
 	return (
 		<div className={styles.sectionDescriptions}>
@@ -75,8 +109,11 @@ function MissionDescription(props) {
 						</div>
 						<div>
 							<h6 className={styles.descriptionHeader}>launch site</h6>
-							<p className={styles.additionalInformation}>{missionDescription.missionLunchSiteShort}</p>
+							<p className={styles.additionalInformation} onMouseEnter={() => setParagraphIsShow(true)} onMouseLeave={() => setParagraphIsShow(false)}>{missionDescription.missionLunchSiteShort}</p>
 						</div>
+							{
+								paragraphIsShow && <p className={`${styles.descriptionLong}`} >{missionDescription.missionLunchSiteLong}</p>
+							}
 					</div>
 				</>
 			) : (
