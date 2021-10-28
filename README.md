@@ -38,7 +38,13 @@ Important informations:
 
 
 ****
-To start Application please use: `npm start`
+To start Application please do:
+1. Install NODE.js on your device
+Next you must open termial in folder where you download my project
+3. Install NPM / use command: npm install -g npm
+4. Install React / npm install --save react react-dom
+5. Install Axios / npm i axios
+6. Use command: npm start
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
