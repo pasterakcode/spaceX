@@ -29,19 +29,23 @@ Important informations:
 
 4. Some missions did not involve any rescue ships. the message "no ships" is the information about it
 
-![image](https://user-images.githubusercontent.com/78322363/139319603-101de43b-4756-47ac-8ee5-83f3305b89aa.png)
+![image](https://user-images.githubusercontent.com/78322363/139320331-d9a12418-7e81-478a-9502-9e3a472000df.png)
 
 
 5. The application has mobile and desktop version: check both.
 
+![image](https://user-images.githubusercontent.com/78322363/139315650-9245beba-deaa-4cb8-a348-d0767d437324.png)
 
+
+****
 To start Application please use: `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+****
 
 
 Have a good fun!!
 Pawel
 
-![image](https://user-images.githubusercontent.com/78322363/139315650-9245beba-deaa-4cb8-a348-d0767d437324.png)
+
