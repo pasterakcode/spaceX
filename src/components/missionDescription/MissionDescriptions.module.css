@@ -4,6 +4,7 @@
 	min-height: 375px;
 	padding: 15px;
 	border-bottom: 1px solid #5c5c5d;
+	cursor: default;
 }
 
 .sectionDescriptions .descriptionHeader {
