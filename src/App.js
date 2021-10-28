@@ -47,7 +47,7 @@ function App() {
 			setMissionNumber(missionNumber + 1);
 	};
 	return (
-		<div className={`App ${styles.mainSection}`}>
+		<div className={`App ${styles.mainSection} container`}>
 			<Navigation onPreviousMission={previousMission} onNextMission={nextMission} missionNumber={missionNumber}/>
 			<MissionDescription missionDetails={missionDetails}/>
 			<MissionShips missionDetails={missionDetails}/>

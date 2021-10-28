@@ -49,14 +49,14 @@ function MissionDescription(props) {
 	return (
 		<div className={styles.sectionDescriptions}>
 			{missionDescription ? (
-				<div>
-					<div>
+				<>
+					<div className={styles.leftSiteDescription}>
 						<div>
-							<h6>mission</h6>
+							<h6 className={styles.descriptionHeader}>mission</h6>
 							<p className={styles.missionTitle}>{missionDescription.missionName}</p>
 						</div>
 						<div>
-							<h6>rocket</h6>
+							<h6 className={styles.descriptionHeader}>rocket</h6>
 							<div className={styles.rocketDetails}>
 							<p className={styles.additionalInformation}>{missionDescription.missionRocket}</p>
 							{missionDescription.missionRocketIsRecovered ? (
@@ -68,17 +68,17 @@ function MissionDescription(props) {
 						</div>
 						<a className={styles.learnMore} href={`${missionDescription.missionLearnMore}`}>learn more</a>
 					</div>
-					<div>
+					<div className={styles.rightSiteDescription}>
 						<div>
-							<h6>launch date</h6>
-							<p className={`${styles.additionalInformation} ${styles.launchDate}`}>{missionDescription.missionLunchDateLong}</p>
+							<h6 className={styles.descriptionHeader}>launch date</h6>
+							<p className={`${styles.additionalInformation} ${styles.launchDate}`}>{(window.innerWidth > 959) ? missionDescription.missionLunchDateShort : missionDescription.missionLunchDateLong}</p>
 						</div>
 						<div>
-							<h6>launch site</h6>
+							<h6 className={styles.descriptionHeader}>launch site</h6>
 							<p className={styles.additionalInformation}>{missionDescription.missionLunchSiteShort}</p>
 						</div>
 					</div>
-				</div>
+				</>
 			) : (
 				<LoadingPage/>
 			)}

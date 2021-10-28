@@ -13,11 +13,11 @@ function Ship(props) {
 				<div className={styles.borderBottom}></div>
 			</div>
 			<div className={styles.shipDescriptions}>
-				<div>
+				<div className={styles.titleDescriptionDiv}>
 					<h6 className={styles.titleDescription}>Home port</h6>
 					<h6 className={styles.titleDescription}>Weight [KG]</h6>
 				</div>
-				<div>
+				<div className={styles.infoDescriptionDiv}>
 					<h6 className={styles.infoDescription}>{props.ship.homePort}</h6>
 					<h6 className={styles.infoDescription}>{props.ship.weight ? props.ship.weight : "unknown"}</h6>
 				</div>

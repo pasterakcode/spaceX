@@ -2,12 +2,32 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 15px;
+	padding: 10px;
 	margin: 0;
 }
-h6 {
-	color: rgb(87, 85, 85);
+.section h6 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.1em;
+	color: #868686;
 	text-transform: uppercase;
 	margin-bottom: 15px;
-    align-self: flex-start;
+	align-self: flex-start;
+}
+
+@media screen and (min-width: 960px) {
+	.section h6 {
+		display: inline;
+		width: 80%;
+		font-size: 16px;
+		line-height: 19px;
+		margin-top: 21px;
+	}
+	.section {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 }

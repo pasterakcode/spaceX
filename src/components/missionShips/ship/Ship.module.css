@@ -1,56 +1,84 @@
 .shipCard {
-    width: 345px;
-    height: 345px;
-    margin: 1rem 0;
-    padding: 0;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: rgb(243, 240, 240);;
+	width: 335px;
+	height: 335px;
+	margin: 1rem 0;
+	padding: 0;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-color: rgb(243, 240, 240);
 }
 
-.shipImage{
-    height: 200px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.shipImage {
+	height: 200px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .shipName {
-    padding: 15px;
-    height: 65px;
-    width: 100%;
+	padding: 15px;
+	height: 58px;
+	width: 100%;
+	overflow: hidden;
 }
-.borderBottom{
-    width: 100%;
-    height: 1px;
-    background-color: rgb(160, 158, 158);
+.borderBottom {
+	width: 100%;
+	height: 1px;
+	background-color: rgb(160, 158, 158);
 }
-.shipDescriptions{
-    /* height: 85px; */
-    margin: 0.5rem 0px;
-    width: 100%;
-    padding: 0px 15px;
-    display: flex;
-    justify-content: space-between;
+
+.shipDescriptions {
+	height: 90px;
+	width: 100%;
+	margin: 0.5rem 0px;
+	padding: 0px 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
-.shipDescriptions div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.shipDescriptions div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 30px;
 }
-h6.titleDescription{
-        color: rgb(87, 85, 85);
-        text-transform: uppercase;
-        margin-bottom: 0px;
+.shipDescriptions h6.titleDescription {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #868686;
+	margin-bottom: 0px;
 }
-h6.infoDescription{
-        color: black;
-        text-transform: capitalize;
-        margin-bottom: 0px;
+.shipDescriptions h6.infoDescription {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: capitalize;
+	margin-bottom: 0px;
 }
-.shipDescriptions div{
-    width: 50%;
+
+
+
+@media screen and (min-width: 460px) {
+	.shipCard {
+		width: 360px;
+		margin: 1rem 1rem;
+	}
+	.borderBottom {
+		width: 100%;
+		height: 1px;
+		background-color: rgb(160, 158, 158);
+	}
+	.shipDescriptions h6.titleDescription,
+	.shipDescriptions h6.infoDescription {
+		margin-top: 0;
+		width: auto;
+	}
 }
+

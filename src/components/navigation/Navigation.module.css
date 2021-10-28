@@ -1,8 +1,9 @@
 .sectionNavigation{
+    height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgb(87, 85, 85);
+    border-bottom: 1px solid #5C5C5D;
 }
 
 .logo {
@@ -17,11 +18,17 @@
 .btn {
     border: none;
     background-color: transparent;
-    color: white;
+    color: #F4F6FA;
     font-size: 2rem;
     font-weight: bold;
     margin: 0 10px;
 }
 .btnNoActive {
-    color: rgb(87, 85, 85)
+    color: #5C5C5D;
+}
+
+@media screen and (min-width: 960px) {
+	.sectionNavigation{
+        height: 150px;
+    }
 }
