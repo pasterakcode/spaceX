@@ -29,10 +29,15 @@ Important informations:
 
 4. Some missions did not involve any rescue ships. the message "no ships" is the information about it
 
+![image](https://user-images.githubusercontent.com/78322363/140171183-566d6aab-cb35-40a4-81c7-6467a520ae52.png)
+
+
 ![image](https://user-images.githubusercontent.com/78322363/139320586-9628ada3-1abd-431d-b31e-b9eda8169f37.png)
 
 
 5. The application has mobile and desktop version: check both.
+
+
 
 ![image](https://user-images.githubusercontent.com/78322363/139315650-9245beba-deaa-4cb8-a348-d0767d437324.png)
 
